@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Adwa's Collection | Handmade Crochet</title>
-  <meta name="description" content="Adwa's Collection – crochet handmade. Amigurumi, keychain, bouquet, hadiah custom dan tempahan mengikut warna pilihan anda.">
+  <title>Dan's Collection | Handmade Crochet</title>
+  <meta name="description" content="Dan's Collection – crochet handmade. Amigurumi, keychain, doll, pouch, car hanging dan item pendidikan midwifery.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Tambah Shrikhand (retro) bersama Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Shrikhand&display=swap" rel="stylesheet">
 
   <style>
     body {
@@ -18,16 +19,99 @@
       padding:0;
       color:#333;
     }
+    a { text-decoration:none; color:inherit; }
+
+    /* Tajuk brand & tajuk besar guna font retro */
+    .brand span,
+    .hero-title {
+      font-family: "Shrikhand", cursive;
+      letter-spacing: 0.04em;
+    }
+
+    .container {
+      max-width:1000px;
+      margin:0 auto;
+      padding:0 1.25rem;
+    }
+
+    .grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:1.5rem;
+      margin-top:1.2rem;
+    }
+
+    .card {
+      background:#fff;
+      border-radius:16px;
+      padding:1rem;
+      box-shadow:0 8px 18px rgba(0,0,0,0.06);
+    }
+
+    .card img {
+      width:100%;
+      border-radius:12px;
+      margin-bottom:0.75rem;
+      display:block;
+      object-fit:cover;
+    }
+
+    .btn {
+      padding:0.55rem 1rem;
+      border:none;
+      border-radius:999px;
+      background:#111827;
+      color:#fff;
+      font-size:0.85rem;
+      width:100%;
+      cursor:pointer;
+    }
+
+    .btn-primary {
+      background:#d86c97;
+    }
+
+    header nav {
+      padding:0.8rem 1.25rem;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background:#111827;
+      color:#f9fafb;
+    }
+
+    .brand {
+      display:flex;
+      align-items:center;
+      gap:0.6rem;
+      font-weight:600;
+      font-size:1.05rem;
+    }
+
+    .brand img {
+      height:36px;
+      width:auto;
+      border-radius:8px;
+    }
+
+    footer {
+      padding:1rem;
+      text-align:center;
+      color:#777;
+      font-size:0.9rem;
+    }
   </style>
 </head>
 
 <body>
 <header>
-  <nav style="padding:1rem; display:flex; justify-content:space-between; align-items:center;">
-    <div style="font-weight:600; font-size:1.1rem;">
-      🧶 Adwa's Collection
+  <nav>
+    <div class="brand">
+      <img src="Logo DC crochet.PNG" alt="Dan's Collection Crochet logo">
+      <span>Dan's Collection Crochet</span>
     </div>
-    <div style="display:flex; gap:1rem;">
+
+    <div style="display:flex; gap:1rem; font-size:0.9rem;">
       <a href="#produk">Produk</a>
       <a href="#tentang">Tentang</a>
       <a href="#order">Order</a>
@@ -37,145 +121,152 @@
 
 <main>
 
-<section style="padding:2rem; text-align:center;">
-  <h1 style="font-size:2rem; font-weight:700;">
-    Handmade Crochet <br><span style="color:#d86c97;">by Adwa’s Collection</span>
-  </h1>
-  <p style="max-width:500px; margin:0.8rem auto;">
-    Crochet lembut & comel untuk hadiah, hiasan, doorgift dan tempahan custom.
-  </p>
-  <button onclick="openWhatsApp()" style="padding:0.8rem 1.4rem; border:none; color:white; background:#d86c97; border-radius:999px;">
-    WhatsApp untuk tempahan
-  </button>
+<section style="padding:2rem 0; text-align:center;">
+  <div class="container">
+    <h1 class="hero-title" style="font-size:2rem; margin-bottom:0.5rem;">
+      Handmade Crochet <br><span style="color:#d86c97;">by Dan’s Collection</span>
+    </h1>
+    <p style="max-width:520px; margin:0.8rem auto;">
+      Crochet lembut & comel untuk hadiah, hiasan, doorgift, car hanging dan item pendidikan midwifery.
+    </p>
+    <button onclick="openWhatsApp()" class="btn btn-primary" style="max-width:260px; margin-top:0.8rem;">
+      WhatsApp untuk tempahan
+    </button>
+  </div>
 </section>
 
-<section id="produk" style="padding:2rem;">
-  <h2 style="text-align:center;">Contoh Produk</h2>
-  <p style="text-align:center; color:#777;">
-    Sebahagian daripada koleksi crochet Adwa’s Collection.
-  </p>
+<section id="produk" style="padding:1rem 0 2.5rem;">
+  <div class="container">
+    <h2 style="text-align:center; margin-bottom:0.2rem;">Contoh Produk</h2>
+    <p style="text-align:center; color:#777;">
+      Produk Dan’s Collection mengikut kategori.
+    </p>
 
-  <div style="
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:1.5rem;
-    max-width:900px;
-    margin:1.5rem auto 0;
-  ">
-    <!-- 1. Crochet Placenta Model -->
-    <article style="background:#fff; border-radius:16px; padding:1rem; box-shadow:0 8px 18px rgba(0,0,0,0.06);">
-      <img src="IMG_6616.jpeg" alt="Crochet placenta model" style="width:100%; border-radius:12px; margin-bottom:0.75rem;">
-      <h3 style="font-size:1rem; margin-bottom:0.3rem;">Crochet Placenta Model (Educational)</h3>
-      <p style="font-size:0.9rem; color:#666; margin-bottom:0.6rem;">
-        Model placenta crochet untuk demonstrasi & pembelajaran O&G, sesuai untuk pelajar dan educator.
-      </p>
-      <button onclick="openWhatsApp('Crochet Placenta Model (Educational)')" 
-              style="padding:0.55rem 1rem; border:none; border-radius:999px; background:#111827; color:#fff; font-size:0.85rem; width:100%;">
-        Tanya / tempah model ini
-      </button>
-    </article>
+    <!-- 1. Midwifery Educational Purpose -->
+    <h3 style="margin-top:2rem;">1. Midwifery's Educational Purpose</h3>
+    <div class="grid">
+      <article class="card">
+        <img src="IMG_6616.jpeg" alt="Crochet placenta model">
+        <h4>Crochet Placenta Model (Educational)</h4>
+        <p style="font-size:0.9rem; color:#666; margin-bottom:0.6rem;">
+          Model placenta crochet untuk demonstrasi & pembelajaran obstetrik.
+        </p>
+        <button class="btn" onclick="openWhatsApp('Crochet Placenta Model (Educational)')">
+          Tanya / tempah model ini
+        </button>
+      </article>
+    </div>
 
-    <!-- 2. Puffer Fish Amigurumi -->
-    <article style="background:#fff; border-radius:16px; padding:1rem; box-shadow:0 8px 18px rgba(0,0,0,0.06);">
-      <img src="8597E58E-ECC9-4AA8-905A-5D4903EDD3E3.jpeg" alt="Puffer fish crochet" style="width:100%; border-radius:12px; margin-bottom:0.75rem;">
-      <h3 style="font-size:1rem; margin-bottom:0.3rem;">Puffer Fish Amigurumi</h3>
-      <p style="font-size:0.9rem; color:#666; margin-bottom:0.6rem;">
-        Ikan buntal crochet comel dalam pelbagai warna, sesuai untuk hadiah atau hiasan bilik.
-      </p>
-      <button onclick="openWhatsApp('Puffer Fish Amigurumi')" 
-              style="padding:0.55rem 1rem; border:none; border-radius:999px; background:#111827; color:#fff; font-size:0.85rem; width:100%;">
-        Saya berminat dengan Puffer Fish
-      </button>
-    </article>
+    <!-- 2. Keychain -->
+    <h3 style="margin-top:2rem;">2. Keychain</h3>
+    <div class="grid">
 
-    <!-- 3. Jellyfish Keychain -->
-    <article style="background:#fff; border-radius:16px; padding:1rem; box-shadow:0 8px 18px rgba(0,0,0,0.06);">
-      <img src="IMG_4486.jpeg" alt="Jellyfish crochet keychain" style="width:100%; border-radius:12px; margin-bottom:0.75rem;">
-      <h3 style="font-size:1rem; margin-bottom:0.3rem;">Jellyfish Keychain</h3>
-      <p style="font-size:0.9rem; color:#666; margin-bottom:0.6rem;">
-        Keychain obor-obor crochet yang lembut dan ringan, sesuai digantung pada beg atau kunci.
-      </p>
-      <button onclick="openWhatsApp('Jellyfish Keychain')" 
-              style="padding:0.55rem 1rem; border:none; border-radius:999px; background:#111827; color:#fff; font-size:0.85rem; width:100%;">
-        Order Jellyfish Keychain
-      </button>
-    </article>
+      <article class="card">
+        <img src="8597E58E-ECC9-4AA8-905A-5D4903EDD3E3.jpeg" alt="Puffer fish">
+        <h4>Puffer Fish Keychain</h4>
+        <button class="btn" onclick="openWhatsApp('Puffer Fish Keychain')">Saya berminat</button>
+      </article>
 
-    <!-- 4. Mini Handbag Keychain -->
-    <article style="background:#fff; border-radius:16px; padding:1rem; box-shadow:0 8px 18px rgba(0,0,0,0.06);">
-      <img src="IMG_2314.jpeg" alt="Mini handbag crochet keychain" style="width:100%; border-radius:12px; margin-bottom:0.75rem;">
-      <h3 style="font-size:1rem; margin-bottom:0.3rem;">Mini Handbag Keychain</h3>
-      <p style="font-size:0.9rem; color:#666; margin-bottom:0.6rem;">
-        Keychain beg mini crochet dengan hiasan bunga, sesuai sebagai doorgift atau hadiah bajet.
-      </p>
-      <button onclick="openWhatsApp('Mini Handbag Keychain')" 
-              style="padding:0.55rem 1rem; border:none; border-radius:999px; background:#111827; color:#fff; font-size:0.85rem; width:100%;">
-        Tanya warna & kuantiti
-      </button>
-    </article>
+      <article class="card">
+        <img src="IMG_4486.jpeg" alt="Jellyfish">
+        <h4>Jellyfish Keychain</h4>
+        <button class="btn" onclick="openWhatsApp('Jellyfish Keychain')">Order Jellyfish</button>
+      </article>
 
-    <!-- 5. Sun Hat Keychain -->
-    <article style="background:#fff; border-radius:16px; padding:1rem; box-shadow:0 8px 18px rgba(0,0,0,0.06);">
-      <img src="IMG_2312.jpeg" alt="Sun hat crochet keychain" style="width:100%; border-radius:12px; margin-bottom:0.75rem;">
-      <h3 style="font-size:1rem; margin-bottom:0.3rem;">Sun Hat Keychain</h3>
-      <p style="font-size:0.9rem; color:#666; margin-bottom:0.6rem;">
-        Topi straw crochet kecil dengan bunga & pearl, manis digantung pada beg atau kunci kereta.
-      </p>
-      <button onclick="openWhatsApp('Sun Hat Keychain')" 
-              style="padding:0.55rem 1rem; border:none; border-radius:999px; background:#111827; color:#fff; font-size:0.85rem; width:100%;">
-        Saya nak Sun Hat Keychain
-      </button>
-    </article>
+      <article class="card">
+        <img src="IMG_2314.jpeg" alt="Mini handbag">
+        <h4>Mini Handbag Keychain</h4>
+        <button class="btn" onclick="openWhatsApp('Mini Handbag Keychain')">Tanya warna & kuantiti</button>
+      </article>
 
-    <!-- 6. Sunflower Keychain -->
-    <article style="background:#fff; border-radius:16px; padding:1rem; box-shadow:0 8px 18px rgba(0,0,0,0.06);">
-      <img src="IMG_2308.jpeg" alt="Sunflower crochet keychain" style="width:100%; border-radius:12px; margin-bottom:0.75rem;">
-      <h3 style="font-size:1rem; margin-bottom:0.3rem;">Sunflower Keychain</h3>
-      <p style="font-size:0.9rem; color:#666; margin-bottom:0.6rem;">
-        Keychain bunga matahari crochet yang ceria, sesuai untuk peminat warna kuning & bunga.
-      </p>
-      <button onclick="openWhatsApp('Sunflower Keychain')" 
-              style="padding:0.55rem 1rem; border:none; border-radius:999px; background:#111827; color:#fff; font-size:0.85rem; width:100%;">
-        Order Sunflower Keychain
-      </button>
-    </article>
+      <article class="card">
+        <img src="IMG_2312.jpeg" alt="Sun hat">
+        <h4>Sun Hat Keychain</h4>
+        <button class="btn" onclick="openWhatsApp('Sun Hat Keychain')">Saya nak</button>
+      </article>
+
+      <article class="card">
+        <img src="IMG_2308.jpeg" alt="Sunflower">
+        <h4>Sunflower Keychain</h4>
+        <button class="btn" onclick="openWhatsApp('Sunflower Keychain')">Order Sunflower</button>
+      </article>
+
+    </div>
+
+    <!-- 3. Doll -->
+    <h3 style="margin-top:2rem;">3. Doll</h3>
+    <div class="grid">
+      <article class="card">
+        <img src="IMG_4630.jpeg" alt="Nurse doll">
+        <h4>Nurse Amigurumi Doll</h4>
+        <button class="btn" onclick="openWhatsApp('Nurse Doll')">Tanya Nurse Doll</button>
+      </article>
+
+      <article class="card">
+        <img src="IMG_2787.jpeg" alt="Mushroom Cat Doll">
+        <h4>Mushroom Cat Doll</h4>
+        <button class="btn" onclick="openWhatsApp('Mushroom Cat Doll')">Saya berminat</button>
+      </article>
+
+      <article class="card">
+        <img src="IMG_2637.jpeg" alt="Yellow Cat Doll">
+        <h4>Yellow Cat Doll</h4>
+        <button class="btn" onclick="openWhatsApp('Yellow Cat Doll')">Order Yellow Cat</button>
+      </article>
+    </div>
+
+    <!-- 4. Pouch -->
+    <h3 style="margin-top:2rem;">4. Pouch</h3>
+    <div class="grid">
+      <article class="card">
+        <h4>Pouch Crochet (Coming Soon)</h4>
+        <button class="btn" onclick="openWhatsApp('Custom Pouch')">Tanya custom pouch</button>
+      </article>
+    </div>
+
+    <!-- 5. Car Hanging -->
+    <h3 style="margin-top:2rem;">5. Car Hanging</h3>
+    <div class="grid">
+      <article class="card">
+        <h4>Car Hanging Crochet (Coming Soon)</h4>
+        <button class="btn" onclick="openWhatsApp('Car Hanging Crochet')">Tanya custom</button>
+      </article>
+    </div>
 
   </div>
 </section>
 
-<section id="tentang" style="padding:2rem;">
-  <h2 style="text-align:center;">Tentang Adwa’s Collection</h2>
-  <p style="max-width:600px; margin:0.8rem auto; text-align:center;">
-    Semua item crochet dibuat secara handmade dengan teliti. Anda boleh request tema,
-    warna dan design mengikut citarasa.
-  </p>
+<section id="tentang" style="padding:2rem 0;">
+  <div class="container">
+    <h2 style="text-align:center;">Tentang Dan’s Collection</h2>
+    <p style="max-width:600px; margin:0.8rem auto; text-align:center; font-size:0.95rem;">
+      Semua crochet dibuat sepenuhnya secara handmade dan boleh ditempah mengikut warna, tema dan saiz pilihan anda.
+    </p>
+  </div>
 </section>
 
-<section id="order" style="padding:2rem;">
-  <h2 style="text-align:center;">Cara Order</h2>
+<section id="order" style="padding:2rem 0 2.5rem;">
+  <div class="container">
+    <h2 style="text-align:center;">Cara Order</h2>
 
-  <div style="max-width:500px; margin:1rem auto; padding:1.2rem; background:#fff; border-radius:1rem;">
-    <p><strong>WhatsApp:</strong></p>
-    <p>
-      <a href="#" onclick="openWhatsApp()">013-287 5878</a>
-    </p>
+    <div style="max-width:500px; margin:1rem auto; padding:1.2rem; background:#fff; border-radius:1rem; box-shadow:0 8px 18px rgba(0,0,0,0.05);">
+      <p><strong>WhatsApp:</strong></p>
+      <p><a href="#" onclick="openWhatsApp()">013-287 5878</a></p>
 
-    <p style="margin-top:1rem;"><strong>Instagram:</strong></p>
-    <p>
-      <a href="https://www.instagram.com/maymaytamashi/" target="_blank">@maymaytamashi</a>
-    </p>
+      <p><strong>Instagram:</strong></p>
+      <p><a href="https://www.instagram.com/maymaytamashi/" target="_blank">@maymaytamashi</a></p>
 
-    <button onclick="openWhatsApp()" style="padding:0.8rem 1.4rem; margin-top:1rem;
-        width:100%; background:#25d366; color:white; border:none; border-radius:999px;">
-      WhatsApp sekarang
-    </button>
+      <button onclick="openWhatsApp()" class="btn btn-primary" style="margin-top:1rem; width:100%;">
+        WhatsApp sekarang
+      </button>
+    </div>
   </div>
 </section>
 
 </main>
 
-<footer style="padding:1rem; text-align:center; color:#777;">
-  © <span id="year"></span> Adwa’s Collection · Crochet handmade with love.
+<footer>
+  © <span id="year"></span> Dan’s Collection · Crochet handmade with love.
 </footer>
 
 <script>
@@ -183,7 +274,7 @@
 
   function openWhatsApp(itemName) {
     const phone = '60132875878'; 
-    let text = "Assalamualaikum, saya berminat dengan crochet handmade Adwa's Collection.";
+    let text = "Assalamualaikum, saya berminat dengan crochet handmade Dan's Collection.";
     if (itemName) text += " Item: " + itemName;
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
     window.open(url, "_blank");
