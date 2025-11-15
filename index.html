@@ -11,104 +11,138 @@
   <!-- Tambah Georgia (retro) bersama Poppins -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Shrikhand&display=swap" rel="stylesheet">
 
-  <style>
-    /* --- Daftar Font Annabel --- */
-    @font-face {
-      font-family: "Annabel";
-      src: url("annabel.ttf") format("truetype");
-      font-weight: normal;
-      font-style: normal;
-    }
+ <style>
+  /* Import font Annabel */
+  @font-face {
+    font-family: "Annabel";
+    src: url("annabel.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
 
-    body {
-      font-family: "Poppins", sans-serif;
-      background:#fff8fc;
-      margin:0;
-      padding:0;
-      color:#333;
-    }
+  body {
+    font-family: "Poppins", sans-serif;
+    background:#fff8fc;
+    margin:0;
+    padding:0;
+    color:#333;
+  }
 
-    a { text-decoration:none; color:inherit; }
+  a { text-decoration: none; color: inherit; }
 
-    /* Tajuk brand & tajuk besar guna ANNABEL */
-    .brand span,
+  /* ============================
+     BRAND (NAVBAR)
+     ============================ */
+  .brand span {
+    font-family: "Georgia", serif; /* LOGO hanya guna Georgia */
+    letter-spacing: 0.04em;
+  }
+
+  header nav {
+    padding:0.8rem 1.25rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#111827;
+    color:#f9fafb;
+  }
+
+  .brand {
+    display:flex;
+    align-items:center;
+    gap:0.6rem;
+    font-weight:600;
+    font-size:1.05rem;
+  }
+
+  .brand img {
+    height:36px;
+    width:auto;
+    border-radius:8px;
+  }
+
+  /* ============================
+     HERO TITLE (H1 BESAR)
+     ============================ */
+  .hero-title {
+    font-family:"Annabel", serif;
+    text-align:center;
+    font-size:3rem;
+    letter-spacing:0.03em;
+    line-height:1.1;
+    margin:2rem 0 1rem;
+  }
+
+  .hero-title span {
+    display:block;
+    color:#d86c97;
+    margin-top:0.6rem;
+    font-size:2.4rem;
+    line-height:1.1;
+  }
+
+  /* Mobile responsive kecilkan sikit supaya swirl tak serabut */
+  @media (max-width: 600px) {
     .hero-title {
-      font-family: "Annabel", serif !important;
-      letter-spacing: 0.04em;
+      font-size:2.3rem;
     }
+    .hero-title span {
+      font-size:1.9rem;
+    }
+  }
 
-    .container {
-      max-width:1000px;
-      margin:0 auto;
-      padding:0 1.25rem;
-    }
+  /* ============================
+     LAYOUT & CARD
+     ============================ */
+  .container {
+    max-width:1000px;
+    margin:0 auto;
+    padding:0 1.25rem;
+  }
 
-    .grid {
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-      gap:1.5rem;
-      margin-top:1.2rem;
-    }
+  .grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:1.5rem;
+    margin-top:1.2rem;
+  }
 
-    .card {
-      background:#fff;
-      border-radius:16px;
-      padding:1rem;
-      box-shadow:0 8px 18px rgba(0,0,0,0.06);
-    }
+  .card {
+    background:#fff;
+    border-radius:16px;
+    padding:1rem;
+    box-shadow:0 8px 18px rgba(0,0,0,0.06);
+  }
 
-    .card img {
-      width:100%;
-      border-radius:12px;
-      margin-bottom:0.75rem;
-      display:block;
-      object-fit:cover;
-    }
+  .card img {
+    width:100%;
+    border-radius:12px;
+    margin-bottom:0.75rem;
+    display:block;
+    object-fit:cover;
+  }
 
-    .btn {
-      padding:0.55rem 1rem;
-      border:none;
-      border-radius:999px;
-      background:#111827;
-      color:#fff;
-      font-size:0.85rem;
-      width:100%;
-      cursor:pointer;
-    }
+  .btn {
+    padding:0.55rem 1rem;
+    border:none;
+    border-radius:999px;
+    background:#111827;
+    color:#fff;
+    font-size:0.85rem;
+    width:100%;
+    cursor:pointer;
+  }
 
-    .btn-primary {
-      background:#d86c97;
-    }
+  .btn-primary {
+    background:#d86c97;
+  }
 
-    header nav {
-      padding:0.8rem 1.25rem;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      background:#111827;
-      color:#f9fafb;
-    }
-
-    .brand {
-      display:flex;
-      align-items:center;
-      gap:0.6rem;
-      font-weight:600;
-      font-size:1.05rem;
-    }
-
-    .brand img {
-      height:36px;
-      width:auto;
-      border-radius:8px;
-    }
-
-    footer {
-      padding:1rem;
-      text-align:center;
-      color:#777;
-      font-size:0.9rem;
-    }
+  footer {
+    padding:1rem;
+    text-align:center;
+    color:#777;
+    font-size:0.9rem;
+  }
 </style>
 </head>
 
